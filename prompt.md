@@ -15,6 +15,11 @@ github 소유자 : viktor-hugo
 <주요 작업 2>
 2. 커밋 내용과 변경 사항 정보를 아래 json양식에 삽입 할 수 있도록 정리한다.
 
+<세부 작업 1>
+이번 커밋에서 변경된 정보를 토대로, 관련 브랜치의 작업 과정들을 분석한다.
+또한, 이전에 동일한 파일이 수정되었던 내용과 비교할 수 있어야 한다.
+예를들어, 각 브랜치별 버젼에 따라 서로 다른 내용을 토대로 개발하고 있을 수 있으니, 이 정보를 기반으로 요약 및 정리한다.
+
 
 <주요 작업 3>
 3. Notion DataBase (링크)[https://www.notion.so/20d3cb37136a80b48148c19f442dd50a?v=20d3cb37136a80c5b574000c1ddf1ba2&source=copy_link]에 새로운 page를 생성하고, 생성된 page의 id를 기반으로 내용을 삽입한다.
@@ -48,6 +53,42 @@ github 소유자 : viktor-hugo
         {
           "text": {
             "content": "홍길동"
+          }
+        }
+      ]
+    },
+    "커밋 발생 위치의 브랜치": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "브랜치명"
+          }
+        }
+      ]
+    },
+    "현재 브랜치": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "브랜치명"
+          }
+        }
+      ]
+    },
+    "머지 여부": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "true/false"
+          }
+        }
+      ]
+    },
+    "revert 여부": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "true/false"
           }
         }
       ]
