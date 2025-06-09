@@ -8,6 +8,10 @@
 <주요 작업 1>
 1. "mcp_test" 레포지토리의 최신 커밋 정보를 불러온다.
 
+<세부 작업 1>
+github 소유자 : viktor-hugo
+저장소 명: mcp_test
+
 <주요 작업 2>
 2. 커밋 내용과 변경 사항 정보를 아래 json양식에 삽입 할 수 있도록 정리한다.
 
@@ -17,29 +21,135 @@
 
 <세부 요청 1>
 아래와 같은 형식으로 정리해줘:
-
-제목: [2025-06-09] feat: 로그인 기능 추가
-
-# 커밋 정보
-
-- 커밋 SHA: {a1b2c3d}
-- 작성자: 홍길동
-- 날짜: 2025-06-09 12:30
-- 변경 파일
-    - src/login.js
-    - src/userController.js
-
-# Diff 요약
-
-```diff
-+ added test.md
+```notion sample
+{
+  "parent": { "database_id": "YOUR_DATABASE_ID" },
+  "properties": {
+    "Name": {
+      "title": [
+        {
+          "text": {
+            "content": "[2025-06-09] feat: 로그인 기능 추가"
+          }
+        }
+      ]
+    },
+    "커밋 SHA": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "a1b2c3d"
+          }
+        }
+      ]
+    },
+    "작성자": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "홍길동"
+          }
+        }
+      ]
+    },
+    "날짜": {
+      "date": {
+        "start": "2025-06-09T12:30:00+09:00"
+      }
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "text": {
+              "content": "변경 파일"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          { "text": { "content": "src/login.js" } }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          { "text": { "content": "src/userController.js" } }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "text": {
+              "content": "Diff 요약"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "code",
+      "code": {
+        "rich_text": [
+          {
+            "text": {
+              "content": [
+                "+ function loginUser() {",
+                "+   // 로그인 로직 추가",
+                "+ }",
+                "- // 기존 로그인 함수 삭제"
+              ].join("\n")
+            }
+          }
+        ],
+        "language": "diff"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "text": {
+              "content": "커밋 메시지"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "text": {
+              "content": "feat: 로그인 기능 추가\n- 로그인 API 연동\n- 유저 인증 로직 구현"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
 ```
-
-# 커밋 메시지
-
-feat: 로그인 기능 추가
-
-- 로그인 API 연동
-- 유저 인증 로직 구현
 
 
