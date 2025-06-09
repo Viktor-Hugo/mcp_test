@@ -61,7 +61,7 @@ github 소유자 : viktor-hugo
       "rich_text": [
         {
           "text": {
-            "content": "브랜치명"
+            "content": "커밋 발생 위치의 브랜치명"
           }
         }
       ]
